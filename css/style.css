@@ -77,6 +77,12 @@ img{
 .fondo-blanco{
     background-color: var(--blanco);
 }
+
+.fondo-degradado{
+    background: rgb(12,3,163);
+    background: linear-gradient(90deg, rgba(12,3,163,1) 0%, rgba(4,4,201,1) 35%, rgba(0,212,255,1) 100%);
+}
+
 /**/
 
 .prompt{
@@ -84,16 +90,25 @@ img{
     border-bottom: 1px solid var(--gris);
 }
 
-
-
-.contenedor-fondo-img01{
-    background-image: url(../img/01-fondo.jpg);
+.contenedor-fondo{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
+.contenedor-fondo-img01{
+    background-image: url(../img/01-fondo.jpg);
+}
+
+.contenedor-fondo--img02{
+    background-image: url(../img/02-fondo.jpg);
+    
+}
+
+.fondo-blanco-transparente{
+    background-color: rgba(248, 248, 248, 0.623);
+}
 
 .contenido-principal{
     padding: 8rem;
@@ -197,4 +212,103 @@ img{
     cursor: pointer;
     border: none;
     color: var(--blanco);
+}
+
+.boton--payment{
+    background-color: #27FF98;
+    border: none;
+    display: block;
+}
+.boton--payment:hover{
+    background-color: #52E2A4;
+    cursor: pointer;
+    border: none;
+    color: var(--blanco);
+}
+
+/*02 CREDIT CARD CHECKOUT  */
+.checkout-content{
+    margin-top: 5rem;
+}
+
+@media(min-width: 768px){
+    .checkout-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+.checkout-content__order-details{
+    /* background-color: var(--gris); */
+    color: var(--blanco);
+}
+
+.checkout-content__card-details{
+    padding: 6rem 2rem;
+    color: var(--negro);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.card-security-details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+.campo--save-card{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.campo__field--checkbox{
+    width: auto;
+}
+
+.card-header-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+}
+
+.card-header-content__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icon{
+    height: 3rem;
+}
+
+.order-details-text{
+    padding: 2rem;
+}
+
+.product-list{
+    padding: 3rem;
+    /* margin: 2rem; */
+}
+
+.producto-list__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-icon{
+    height: 3rem;
+}
+
+.img-cart{
+    height: 60%;
 }

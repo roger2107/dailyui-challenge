@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <title>Checkout Page</title>
+</head>
+<body class="fondo-degradado">
+    <div class="contenedor fondo-blanco">
+        <div class="checkout-content">
+            <div class="checkout-content__order-details contenedor-fondo contenedor-fondo--img02 fondo-blanco-transparente">
+                <h2 class="no-margin centrar-texto">Order Details</h2>
+                <div class="product-list">
+                    <p>Random product list.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Repellat veniam maiores labore vel maxime consequuntur delectus, 
+                        harum voluptas nihil quia ut hic obcaecati? Obcaecati id vero ab
+                        molestiae enim possimus?</p>
+                </div>
+                
+            </div>
+
+            <div class="checkout-content__card-details">
+                <div class="card-header-content">
+                    <h2 class="no-margin">Card Details</h2>
+                    <div class="card-header-content__img">
+                        <img class="img-icon" src="img/visa-icon.png" alt="card icon">
+                    </div>
+                </div>
+                
+                <form class="fomulario">
+                    <div class="campo">
+                        <!-- <label class="campo__label" for="inputName">Name</label> -->
+                        <input class="campo__field" type="text" id="inputName" placeholder="NAME ON CARD">
+                    </div>
+
+                    <div class="campo">
+                        <!-- <label class="campo__label" for="inputName">Name</label> -->
+                        <input class="campo__field" type="number"  placeholder="CARD NUMBER">
+                    </div>
+
+                    <div class="card-security-details">
+                        <div class="campo">
+                            <!-- <label class="campo__label" for="inputName">Name</label> -->
+                            <!-- <input class="campo__field" type="number"  placeholder="MONTH" min="01" max="12"> -->
+                            <select name="month" class="campo__field">
+                                <option selected disabled>Month</option>
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                              </select>
+                        </div>
+    
+                        <div class="campo">
+                            <!-- <label class="campo__label" for="inputName">Name</label> -->
+                            <select name="month" class="campo__field">
+                                <option selected disabled>Year</option>
+                                <option value="Jan">2023</option>
+                                <option value="Feb">2024</option>
+                                <option value="Mar">2025</option>
+                                <option value="Apr">2026</option>
+                                <option value="May">2027</option>
+                                <option value="Jun">2028</option>
+                                <option value="Jul">2029</option>
+                                <option value="Aug">2030</option>
+                              </select>
+                        </div>
+    
+                        <div class="campo">
+                            <!-- <label class="campo__label" for="inputName">Name</label> -->
+                            <input class="campo__field" type="password"  placeholder="CVV" >
+                        </div>
+                    </div>
+
+                    <div class="campo campo--save-card">
+                        <input class="campo__field campo__field--checkbox" type="checkbox" id="savecard-check">
+                        <label class="campo__label" for="savecard-check">Save card</label>
+                    </div>
+
+                    <div class="campo">
+                        <input class="boton boton--payment" type="button" value="PAY NOW">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
